@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,7 +51,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between">
         {/* 로고 */}
         <a href="#" className="flex items-center gap-2.5 shrink-0" onClick={handleNavClick}>
-          <img src="/images/logo.png" alt="우유펫 로고" width={38} height={38} />
+          <Image src="/images/logo.png" alt="우유펫 로고" width={38} height={38} />
           <span className="text-xl font-bold text-dark">우유펫</span>
         </a>
 

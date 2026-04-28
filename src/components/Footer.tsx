@@ -1,4 +1,5 @@
 // Phase 2: CSS 디자인 적용
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
           {/* 로고 영역 */}
           <div className="lg:w-1/3">
             <a href="#" className="inline-flex items-center gap-2.5 mb-4">
-              <img src="/images/logo.png" alt="우유펫 로고" width={32} height={32} />
+              <Image src="/images/logo.png" alt="우유펫 로고" width={32} height={32} />
               <span className="text-lg font-bold text-white">우유펫</span>
             </a>
             <p className="text-sm text-white/50 leading-relaxed">

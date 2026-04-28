@@ -1,6 +1,7 @@
 "use client";
 
 import { QRCodeSVG } from "qrcode.react";
+import Image from "next/image";
 
 export default function HeroSection() {
   const PLAYSTORE_URL =
@@ -95,9 +96,11 @@ export default function HeroSection() {
             <div>
               <div className="w-[220px] sm:w-[240px] lg:w-[250px] rounded-[2.5rem] border-[2px] border-gray-light/80 bg-white shadow-lg shadow-gray/10 overflow-hidden">
                 <div className="rounded-[2.3rem] overflow-hidden">
-                  <img
+                  <Image
                     src="/images/app-screen-home.png"
                     alt="우유펫 앱 홈 화면 - 지도에서 주변 유치원 탐색"
+                    width={250}
+                    height={540}
                     className="w-full h-auto block"
                   />
                 </div>
@@ -108,9 +111,11 @@ export default function HeroSection() {
             <div className="hidden sm:block">
               <div className="w-[170px] lg:w-[190px] rounded-[2rem] border-[2px] border-gray-light/80 bg-white shadow-md shadow-gray/10 overflow-hidden">
                 <div className="rounded-[1.8rem] overflow-hidden">
-                  <img
+                  <Image
                     src="/images/app-screen-detail.png"
                     alt="우유펫 앱 유치원 상세 페이지"
+                    width={190}
+                    height={411}
                     className="w-full h-auto block"
                   />
                 </div>
@@ -121,9 +126,11 @@ export default function HeroSection() {
             <div className="hidden lg:block">
               <div className="w-[170px] lg:w-[190px] rounded-[2rem] border-[2px] border-gray-light/80 bg-white shadow-md shadow-gray/10 overflow-hidden">
                 <div className="rounded-[1.8rem] overflow-hidden">
-                  <img
+                  <Image
                     src="/images/app-screen-chat.png"
                     alt="우유펫 앱 채팅 화면 - 돌봄 중 실시간 소통"
+                    width={190}
+                    height={411}
                     className="w-full h-auto block"
                   />
                 </div>
